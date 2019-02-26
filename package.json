@@ -1,0 +1,24 @@
+{
+  "name": "fe1902",
+  "version": "1.0.0",
+  "description": "My Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LVOTC/API-FE1902.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LVOTC/API-FE1902/issues"
+  },
+  "homepage": "https://github.com/LVOTC/API-FE1902#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-assemble": "^0.6.3",
+    "grunt-contrib-compass": "^1.1.1"
+  }
+}
