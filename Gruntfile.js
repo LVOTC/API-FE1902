@@ -16,6 +16,22 @@ module.exports = function(grunt) {
                   noLineComments: true
               }
           },
+      },
+      assemble: {
+        options: {
+            layoutdir: 'src/templates/layouts',
+            layout: ['default.hbs'],
+            partials: ['src/templates/partials/{,*/}*.*'],
+            helpers: ['partial'],
+            flatten: true
+        },
+        en: {
+            options: {
+                data: ['src/templates/data/en/*.yml', 'src/templates/data/*.yml']
+            },
+            src: ['src/templates/pages/en/*.hbs'],
+            dest: './web'
+        },
       }
   });
 
