@@ -1,0 +1,167 @@
+---
+custom_basename: dashboard
+---
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-xl-3">
+            <div class="boxes boxes--right">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="circle circle--border circle--success">
+                            <svg class="svg-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#visibility"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-8 v-align">
+                        <h5>64,570</h5>
+                        <p>{{dashboard.stats.visits}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-3">
+            <div class="boxes boxes--right">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="circle circle--border circle--primary">
+                            <svg class="svg-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#timeline"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-8 v-align">
+                        <h5>64,570</h5>
+                        <p>{{dashboard.stats.revenue}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-3">
+            <div class="boxes boxes--right">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="circle circle--border circle--danger">
+                            <svg class="svg-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#trackChanges"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-8 v-align">
+                        <h5>64,570</h5>
+                        <p>{{dashboard.stats.sales}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-3">
+            <div class="boxes boxes--right">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="circle circle--border circle--secondary">
+                            <svg class="svg-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#favorite"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-8 v-align">
+                        <h5>64,570</h5>
+                        <p>{{dashboard.stats.conversion}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-4">
+            <div class="boxes">
+                <h6 class="boxes__title">Yearly sales report</h6>
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+        <div class="col-xl-4">
+            <div class="boxes">
+                <h6 class="boxes__title">Total revenue</h6>
+                <canvas id="myChart1"></canvas>
+            </div>
+        </div>
+        <div class="col-xl-4">
+            <div class="boxes">
+                <h6 class="boxes__title">Total revenue</h6>
+                <canvas id="myChart2"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-8">
+            <div class="boxes">
+                <h6 class="boxes__title">Latest projects</h6>
+                <p class="boxes__subheading">Your awesome text goes here.</p>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-xl-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="boxes boxes--flex">
+                        <img class="boxes__image" src="assets/images/user.jpg" alt="user picture">
+                        <div class="boxes__user-info v-align">
+                            <h6>Tomukas</h6>
+                            <p>tomukas@xxx.com</p>
+                            <p class="user-role user-role--admin">User</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="boxes boxes--flex">
+                        <img class="boxes__image" src="assets/images/user-1.jpeg" alt="user picture">
+                        <div class="boxes__user-info v-align">
+                            <h6>Aistutė</h6>
+                            <p>aistute@one.lt</p>
+                            <p class="user-role user-role--user">User</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="boxes boxes--flex">
+                        <img class="boxes__image" src="assets/images/user-1.jpeg" alt="user picture">
+                        <div class="boxes__user-info v-align">
+                            <h6>Marytė</h6>
+                            <p>maryte@delfi.lt</p>
+                            <p class="user-role user-role--master">Admin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

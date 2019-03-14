@@ -1,0 +1,59 @@
+.svg-icon{
+    height: 24px;
+    width: 24px;
+}
+
+@mixin arrow($color: $mid-gray, $rotate: -45deg) {
+    content: " ";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    border: solid $color;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    -webkit-transform: rotate($rotate) translateY(-50%);
+        -ms-transform: rotate($rotate) translateY(-50%);
+            transform: rotate($rotate) translateY(-50%);
+}
+
+@mixin circle($height: 80px, $width: 80px){
+    position: relative;
+    height: $height;
+    width: $width;
+    border-radius: 50%;
+}
+.circle{
+    &--border{
+        border: 5px solid;
+    }
+    &--success{
+        background: $color-success;
+        border-color: $color-success-ol;
+    }
+    &--danger{
+        background: $color-danger;
+        border-color: $color-danger-ol;
+    }
+    &--primary{
+        background: $color-primary;
+        border-color: $color-primary-ol;
+    }
+    &--secondary{
+        background: $color-secondary;
+        border-color: $color-secondary-ol;
+    }
+    .svg-icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        right: 0;
+        bottom: 0;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        width: 32px;
+        height: 32px;
+        fill: #fff;
+    }
+}

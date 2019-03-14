@@ -1,0 +1,23 @@
+@import 'variables.scss';
+@import 'icons.scss';
+@import 'layout.scss';
+@import 'utils.scss';
+
+body{
+    margin: 0;
+    background: $bg-color;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+h6{
+    font-size: 16px;
+}
