@@ -8,6 +8,48 @@
     border-radius: $border-radius;
     background: #fff;
     padding: 15px;
-    text-align: right;
     margin-bottom: 15px;
+    .circle{
+        @include circle();
+    }
+    &__title{
+    }
+    &--right{
+        text-align: right;
+    }
+    &__image{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        -o-object-fit: cover;
+           object-fit: cover;
+    }
+    &--flex{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    &__user-info{
+        margin-left: 20px;
+        p{
+            &:first-of-type{
+                color: $mid-gray;
+            }
+        }
+    }
+}
+
+.user-role{
+    &--user{
+        color: $color-user;
+        font-weight: 600;
+    }
+    &--admin{
+        color: $color-admin;
+        font-weight: 600;
+    }
+    &--master{
+        color: $color-master;
+        font-weight: 600;
+    }
 }

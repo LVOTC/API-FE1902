@@ -30,7 +30,31 @@
             }
             &__link{
                 display: inline-block;
-                padding: 0 20px;                
+                padding: 0 20px;
+            }
+        }
+        .dropdown-menu{
+            &__item{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                padding: 10px 20px;
+                .circle{
+                    @include circle($width: 40px, $height: 40px);
+                }
+                &__title{
+                    margin-left: 10px;
+                    h5{
+                        color: $text-color;
+                    }
+                    p{
+                        color: $mid-gray;
+                        line-height: 1;
+                    }
+                }
             }
         }
     }

@@ -32,15 +32,22 @@ module.exports = function(grunt) {
             layoutdir: 'src/templates/layouts',
             layout: ['default.hbs'],
             partials: ['src/templates/partials/{,*/}*.*', 'src/sprites/svg/*'],
-            helpers: ['partial'],
+            helpers: [''],
             flatten: true
         },
         en: {
             options: {
-                data: ['src/templates/data/en/*.yml', 'src/templates/data/*.yml']
+                data: ['src/templates/data/en/*.yml']
             },
             src: ['src/templates/pages/en/*.hbs'],
             dest: './web'
+        },
+        lt: {
+            options: {
+                data: ['src/templates/data/lt/*.yml']
+            },
+            src: ['src/templates/pages/lt/*.hbs'],
+            dest: './web/lt/'
         },
     },
     svg_sprite: {
@@ -77,11 +84,11 @@ module.exports = function(grunt) {
         },
         dev: {
             files: ['src/assets/sass/**/*.scss', 'src/templates/**/*.hbs'],
-            tasks: ['compass:dev', 'assemble:en']
+            tasks: ['compass:dev', 'assemble:site']
         },
         handlebars: {
             files: ['src/templates/*/*.hbs', 'src/templates/layouts/*.hbs' ],
-            tasks: ['assemble:en']
+            tasks: ['assemble:site']
         }
     },
   });
@@ -94,9 +101,15 @@ module.exports = function(grunt) {
 ].forEach(grunt.loadNpmTasks);
 
   // Default task(s).
+  grunt.registerTask('assemble:site', [
+      'assemble:en',
+      'assemble:lt',
+  ]);
+  // Default task(s).
   grunt.registerTask('default', [
       'compass:dist',
-      'assemble:en'
+      'assemble:en',
+      'assemble:lt',
   ]);
 
 };

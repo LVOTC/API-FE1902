@@ -7,7 +7,7 @@
     <nav class="nav-bar nav-bar--right">
         <ul class="nav-bar__lists nav-bar__lists--left">
             <li class="nav-bar__lists__link">
-                <a href="#">
+                <a href="#" id="burger">
                     <svg class="svg-icon">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use>
                     </svg>
@@ -15,9 +15,62 @@
             </li>
         </ul>
         <ul class="nav-bar__lists nav-bar__lists--right">
-            <li class="nav-bar__lists__link"><a href="#">btn</a></li>
-            <li class="nav-bar__lists__link"><a href="#">btn</a></li>
-            <li class="nav-bar__lists__link"><a href="#">icon</a></li>
+            <li class="nav-bar__lists__link">
+                <a href="#" role="button" id="activities" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  link
+                </a>
+                <div class="dropdown-menu" aria-labelledby="activities">
+                  <a class="dropdown-menu__item" href="#">
+                      <div class="circle">
+                          <svg class="svg-icon">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use>
+                          </svg>
+                      </div>
+                      <div class="dropdown-menu__item__title">
+                          <h5>Robert</h5>
+                          <p>1min</p>
+                      </div>
+                  </a>
+                  <a class="dropdown-menu__item" href="#">
+                      <svg class="svg-icon">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use>
+                      </svg>
+                      <div class="dropdown-menu__item__title">
+                          <h5>Robert</h5>
+                          <p>1min</p>
+                      </div>
+                  </a>
+                  <a class="dropdown-menu__item" href="#">
+                      <svg class="svg-icon">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use>
+                      </svg>
+                      <div class="dropdown-menu__item__title">
+                          <h5>Robert</h5>
+                          <p>1min</p>
+                      </div>
+                  </a>
+                </div>
+            </li>
+            <li class="nav-bar__lists__link">
+                <a href="#" role="button" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  link
+                </a>
+                <div class="dropdown-menu" aria-labelledby="notifications">
+                  <a class="dropdown-menu__item" href="#">Action</a>
+                  <a class="dropdown-menu__item" href="#">Another action</a>
+                  <a class="dropdown-menu__item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-bar__lists__link">
+                <a href="#" role="button" id="profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  link
+                </a>
+                <div class="dropdown-menu" aria-labelledby="profile">
+                  <a class="dropdown-menu__item" href="#">Action</a>
+                  <a class="dropdown-menu__item" href="#">Another action</a>
+                  <a class="dropdown-menu__item" href="#">Something else here</a>
+                </div>
+            </li>
         </ul>
     </nav>
 </div>
